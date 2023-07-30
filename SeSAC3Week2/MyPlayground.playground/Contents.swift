@@ -204,3 +204,162 @@ let baby = BabyMonster()
 
 
 
+let number1 = 3
+let numberToString = String(number1)
+
+type(of: number1)
+type(of: numberToString)
+
+
+class Mobile {
+    let name: String
+
+    init(name: String) {
+        self.name = name
+    }
+
+}
+
+class Google: Mobile {
+
+}
+
+class Apple: Mobile {
+    let conference = "WWDC"
+}
+
+let mobile = Mobile(name: "Phone")
+let google = Google(name: "구글")
+let apple = Apple(name: "애플")
+
+
+// is: 어떤 클래스의 인스턴스 타입인 지 확인
+
+mobile is Mobile
+mobile is Google
+mobile is Apple
+
+google is Mobile
+google is Google
+google is Apple
+
+apple is Mobile
+apple is Google
+apple is Apple
+
+
+let iphone: Mobile = Apple(name: "iPhone Pro Max")
+iphone.name
+
+type(of: iphone)
+
+
+// 타입 캐스팅을 통해서 원하는 프로퍼티에 접근할 수 있도록 설정
+// Type Cast Operator: as / as? as!
+
+// as? 옵셔널 반환 타입 => 실패할 경우 nil 반환
+// as! 욥서널 타입 아님 => 실패할 경우 무조건 런타임 오류 발생
+
+if let value = iphone as? Apple {
+    print(value.conference)
+}
+
+if let value = iphone as? Google {
+    print(value)
+} else {
+    print("타입 캐스팅 실패")
+}
+
+
+var something: [Any] = ["a", "b", "c", true, false, 12, 456]
+something.append(0)
+something.append(false)
+something.append("d")
+something.append(mobile)
+
+print(something)
+print(something[4])
+
+let element = something[4]
+
+type(of: element)
+
+// Any: 모든 타입에 대한 인스턴스를 담을 수 있음 vs AnyObject: 클래스의 인스턴스만 담을 수 있음
+// 컴파일 시점에서는 어떤 타입인지 확인할 수 없고, 런타임 시점에 타입이 결정
+if let value = element as? Int {
+    print(value)
+} else {
+    print("Int 아님")
+}
+
+if let value = element as? String {
+    print(value)
+} else {
+    print("String 아님")
+}
+
+if let value = element as? Bool {
+    print(value)
+} else {
+    print("Bool 아님")
+}
+
+if let value = element as? Double {
+    print(value)
+} else {
+    print("Double 아님")
+}
+
+
+enum DrinkSize {
+    case short, tall, grande, venti
+}
+
+class DrinkClass {
+    let name: String
+    var count: Int
+    var size: DrinkSize
+
+    init(name: String, count: Int, size: DrinkSize) {
+        self.name = name
+        self.count = count
+        self.size = size
+    }
+}
+
+let drinkClass = DrinkClass(name: "아샷추", count: 3300, size: .venti)
+
+struct DrinkStruct {
+    let name: String
+    var count: Int
+    var size: DrinkSize
+}
+
+var drinkStruct = DrinkStruct(name: "아아", count: 1500, size: .grande)
+//drinkStruct.name = "메로나"
+drinkStruct.count = 1900
+drinkStruct.size = .short
+
+struct Poster {
+    var image: UIImage = UIImage(systemName: "star") ?? UIImage()
+
+}
+
+// 넷플릭스
+struct Movie {
+
+    // 타입 프로퍼티: 지연 저장 프로퍼티의 형태로 기본적으로 동작, lazy를 사용하지 않아도 됌
+    static let best = "이달의 최고 영화"
+
+    let name: String
+    let runtime: Int
+    // 지연 저장 프로퍼티 lazy, 상수는 인스턴스가 생성되기 전에 값을 항상 가지고 있어야 함
+    lazy var video: Poster = Poster()
+}
+
+let media = Movie(name: "사랑의 불시착", runtime: 130)
+
+Movie.best
+
+// 호출 순간 메모리에 올라감.
+// 종료 될때까지 유지됨

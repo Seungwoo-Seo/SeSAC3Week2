@@ -22,6 +22,11 @@
 		57019D592A725F5500E515BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D582A725F5500E515BD /* SettingViewController.swift */; };
 		57019D5B2A725F6500E515BD /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D5A2A725F6500E515BD /* ShoppingViewController.swift */; };
 		57019D622A7273A300E515BD /* ShoppingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D612A7273A300E515BD /* ShoppingCell.swift */; };
+		57019D662A73507000E515BD /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D652A73507000E515BD /* CustomTableViewController.swift */; };
+		57019D692A739F0100E515BD /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D682A739F0100E515BD /* MovieViewController.swift */; };
+		57019D6B2A739F0F00E515BD /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57019D6A2A739F0F00E515BD /* Movie.storyboard */; };
+		57019D6D2A73A26D00E515BD /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D6C2A73A26D00E515BD /* MovieInfo.swift */; };
+		57019D6F2A73B69C00E515BD /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D6E2A73B69C00E515BD /* PaddingLabel.swift */; };
 		5714F0E32A6E04EF004B9EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714F0E22A6E04EF004B9EAA /* AppDelegate.swift */; };
 		5714F0E52A6E04EF004B9EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714F0E42A6E04EF004B9EAA /* SceneDelegate.swift */; };
 		5714F0E72A6E04EF004B9EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714F0E62A6E04EF004B9EAA /* ViewController.swift */; };
@@ -62,6 +67,11 @@
 		57019D582A725F5500E515BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		57019D5A2A725F6500E515BD /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		57019D612A7273A300E515BD /* ShoppingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCell.swift; sourceTree = "<group>"; };
+		57019D652A73507000E515BD /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		57019D682A739F0100E515BD /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		57019D6A2A739F0F00E515BD /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		57019D6C2A73A26D00E515BD /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		57019D6E2A73B69C00E515BD /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		5714F0DF2A6E04EF004B9EAA /* SeSAC3Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC3Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5714F0E22A6E04EF004B9EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5714F0E42A6E04EF004B9EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,20 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		57019D402A71FFD700E515BD /* Day9 */ = {
+		57019D402A71FFD700E515BD /* Day9,10 */ = {
 			isa = PBXGroup;
 			children = (
 				57019D412A72000900E515BD /* TableView.storyboard */,
-				57019D512A72496900E515BD /* Extension.swift */,
-				57019D492A7232D600E515BD /* StudyTableViewController.swift */,
-				57019D432A720FEC00E515BD /* TodoTableViewController.swift */,
-				57019D452A72136D00E515BD /* TodoTableViewCell.swift */,
-				57019D4B2A72333700E515BD /* StudyTableViewCell.swift */,
-				57019D4F2A723D0B00E515BD /* AppleTableViewCell.swift */,
-				57019D472A7213F000E515BD /* TodoTableViewSectionKind.swift */,
-				57019D4D2A72361F00E515BD /* StudyTableViewSectionKind.swift */,
+				57019D632A73505100E515BD /* Day9 */,
+				57019D642A73505C00E515BD /* Day10 */,
 			);
-			path = Day9;
+			path = "Day9,10";
 			sourceTree = "<group>";
 		};
 		57019D532A72559300E515BD /* Day9 */ = {
@@ -155,6 +159,40 @@
 			path = "집중모드화면";
 			sourceTree = "<group>";
 		};
+		57019D632A73505100E515BD /* Day9 */ = {
+			isa = PBXGroup;
+			children = (
+				57019D512A72496900E515BD /* Extension.swift */,
+				57019D492A7232D600E515BD /* StudyTableViewController.swift */,
+				57019D432A720FEC00E515BD /* TodoTableViewController.swift */,
+				57019D452A72136D00E515BD /* TodoTableViewCell.swift */,
+				57019D4B2A72333700E515BD /* StudyTableViewCell.swift */,
+				57019D4F2A723D0B00E515BD /* AppleTableViewCell.swift */,
+				57019D472A7213F000E515BD /* TodoTableViewSectionKind.swift */,
+				57019D4D2A72361F00E515BD /* StudyTableViewSectionKind.swift */,
+			);
+			path = Day9;
+			sourceTree = "<group>";
+		};
+		57019D642A73505C00E515BD /* Day10 */ = {
+			isa = PBXGroup;
+			children = (
+				57019D652A73507000E515BD /* CustomTableViewController.swift */,
+			);
+			path = Day10;
+			sourceTree = "<group>";
+		};
+		57019D672A739EDB00E515BD /* Day10 */ = {
+			isa = PBXGroup;
+			children = (
+				57019D682A739F0100E515BD /* MovieViewController.swift */,
+				57019D6A2A739F0F00E515BD /* Movie.storyboard */,
+				57019D6C2A73A26D00E515BD /* MovieInfo.swift */,
+				57019D6E2A73B69C00E515BD /* PaddingLabel.swift */,
+			);
+			path = Day10;
+			sourceTree = "<group>";
+		};
 		5714F0D62A6E04EF004B9EAA = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +230,7 @@
 			children = (
 				5737AB132A70A399002F678E /* 정리해야함 */,
 				5737AB142A70A3A7002F678E /* Day8,9 */,
-				57019D402A71FFD700E515BD /* Day9 */,
+				57019D402A71FFD700E515BD /* Day9,10 */,
 			);
 			name = "수업";
 			path = "수업";
@@ -203,6 +241,7 @@
 			children = (
 				5737AB052A6FD13E002F678E /* Day7,8 */,
 				57019D532A72559300E515BD /* Day9 */,
+				57019D672A739EDB00E515BD /* Day10 */,
 			);
 			name = "과제";
 			path = "과제";
@@ -337,6 +376,7 @@
 				5737AB162A70A3DD002F678E /* SignUp.storyboard in Resources */,
 				5737AB092A6FD219002F678E /* Emotion.storyboard in Resources */,
 				57019D422A72000900E515BD /* TableView.storyboard in Resources */,
+				57019D6B2A739F0F00E515BD /* Movie.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +393,9 @@
 				57019D462A72136D00E515BD /* TodoTableViewCell.swift in Sources */,
 				57019D4C2A72333700E515BD /* StudyTableViewCell.swift in Sources */,
 				57019D442A720FEC00E515BD /* TodoTableViewController.swift in Sources */,
+				57019D6F2A73B69C00E515BD /* PaddingLabel.swift in Sources */,
 				5737AAFB2A6F5C5C002F678E /* FSCalendarViewController.swift in Sources */,
+				57019D6D2A73A26D00E515BD /* MovieInfo.swift in Sources */,
 				57019D622A7273A300E515BD /* ShoppingCell.swift in Sources */,
 				57019D3F2A71F8A800E515BD /* SecondTapViewController.swift in Sources */,
 				5737AB122A6FE65E002F678E /* UserDefaultsManager.swift in Sources */,
@@ -362,10 +404,12 @@
 				57019D572A725AB700E515BD /* ConcentrationModeTableViewController.swift in Sources */,
 				57019D592A725F5500E515BD /* SettingViewController.swift in Sources */,
 				57019D4A2A7232D600E515BD /* StudyTableViewController.swift in Sources */,
+				57019D692A739F0100E515BD /* MovieViewController.swift in Sources */,
 				5737AB072A6FD1E7002F678E /* EmotionViewController.swift in Sources */,
 				5737AAFD2A6F9365002F678E /* Actor.swift in Sources */,
 				5737AB0F2A6FE33C002F678E /* EmotionKind.swift in Sources */,
 				5737AB0B2A6FDB9C002F678E /* EmotionDetailViewController.swift in Sources */,
+				57019D662A73507000E515BD /* CustomTableViewController.swift in Sources */,
 				57019D522A72496900E515BD /* Extension.swift in Sources */,
 				5714F0E52A6E04EF004B9EAA /* SceneDelegate.swift in Sources */,
 				5737AAFF2A6F992B002F678E /* CalendarViewController.swift in Sources */,
