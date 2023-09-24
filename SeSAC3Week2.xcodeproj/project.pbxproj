@@ -18,7 +18,7 @@
 		57019D502A723D0C00E515BD /* AppleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D4F2A723D0B00E515BD /* AppleTableViewCell.swift */; };
 		57019D522A72496900E515BD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D512A72496900E515BD /* Extension.swift */; };
 		57019D552A72563000E515BD /* SeveralTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57019D542A72563000E515BD /* SeveralTableView.storyboard */; };
-		57019D572A725AB700E515BD /* ConcentrationModeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D562A725AB700E515BD /* ConcentrationModeTableViewController.swift */; };
+		57019D572A725AB700E515BD /* ConcentrationModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D562A725AB700E515BD /* ConcentrationModeViewController.swift */; };
 		57019D592A725F5500E515BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D582A725F5500E515BD /* SettingViewController.swift */; };
 		57019D5B2A725F6500E515BD /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D5A2A725F6500E515BD /* ShoppingViewController.swift */; };
 		57019D622A7273A300E515BD /* ShoppingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57019D612A7273A300E515BD /* ShoppingCell.swift */; };
@@ -49,6 +49,7 @@
 		5737AB122A6FE65E002F678E /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737AB112A6FE65E002F678E /* UserDefaultsManager.swift */; };
 		5737AB162A70A3DD002F678E /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5737AB152A70A3DD002F678E /* SignUp.storyboard */; };
 		5737AB182A70A402002F678E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737AB172A70A402002F678E /* SignUpViewController.swift */; };
+		57627D1D2A79E7F700B37AF1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57627D1C2A79E7F700B37AF1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +64,7 @@
 		57019D4F2A723D0B00E515BD /* AppleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTableViewCell.swift; sourceTree = "<group>"; };
 		57019D512A72496900E515BD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		57019D542A72563000E515BD /* SeveralTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeveralTableView.storyboard; sourceTree = "<group>"; };
-		57019D562A725AB700E515BD /* ConcentrationModeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationModeTableViewController.swift; sourceTree = "<group>"; };
+		57019D562A725AB700E515BD /* ConcentrationModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationModeViewController.swift; sourceTree = "<group>"; };
 		57019D582A725F5500E515BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		57019D5A2A725F6500E515BD /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		57019D612A7273A300E515BD /* ShoppingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCell.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		5737AB112A6FE65E002F678E /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		5737AB152A70A3DD002F678E /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		5737AB172A70A402002F678E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		57627D1C2A79E7F700B37AF1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,7 @@
 			children = (
 				57019D412A72000900E515BD /* TableView.storyboard */,
 				57019D632A73505100E515BD /* Day9 */,
-				57019D642A73505C00E515BD /* Day10 */,
+				57019D642A73505C00E515BD /* Day10,13 */,
 			);
 			path = "Day9,10";
 			sourceTree = "<group>";
@@ -153,7 +155,7 @@
 		57019D602A726C8D00E515BD /* 집중모드화면 */ = {
 			isa = PBXGroup;
 			children = (
-				57019D562A725AB700E515BD /* ConcentrationModeTableViewController.swift */,
+				57019D562A725AB700E515BD /* ConcentrationModeViewController.swift */,
 			);
 			name = "집중모드화면";
 			path = "집중모드화면";
@@ -174,12 +176,13 @@
 			path = Day9;
 			sourceTree = "<group>";
 		};
-		57019D642A73505C00E515BD /* Day10 */ = {
+		57019D642A73505C00E515BD /* Day10,13 */ = {
 			isa = PBXGroup;
 			children = (
 				57019D652A73507000E515BD /* CustomTableViewController.swift */,
+				57627D1C2A79E7F700B37AF1 /* DetailViewController.swift */,
 			);
-			path = Day10;
+			path = "Day10,13";
 			sourceTree = "<group>";
 		};
 		57019D672A739EDB00E515BD /* Day10 */ = {
@@ -401,11 +404,12 @@
 				5737AB122A6FE65E002F678E /* UserDefaultsManager.swift in Sources */,
 				57019D5B2A725F6500E515BD /* ShoppingViewController.swift in Sources */,
 				5714F0E32A6E04EF004B9EAA /* AppDelegate.swift in Sources */,
-				57019D572A725AB700E515BD /* ConcentrationModeTableViewController.swift in Sources */,
+				57019D572A725AB700E515BD /* ConcentrationModeViewController.swift in Sources */,
 				57019D592A725F5500E515BD /* SettingViewController.swift in Sources */,
 				57019D4A2A7232D600E515BD /* StudyTableViewController.swift in Sources */,
 				57019D692A739F0100E515BD /* MovieViewController.swift in Sources */,
 				5737AB072A6FD1E7002F678E /* EmotionViewController.swift in Sources */,
+				57627D1D2A79E7F700B37AF1 /* DetailViewController.swift in Sources */,
 				5737AAFD2A6F9365002F678E /* Actor.swift in Sources */,
 				5737AB0F2A6FE33C002F678E /* EmotionKind.swift in Sources */,
 				5737AB0B2A6FDB9C002F678E /* EmotionDetailViewController.swift in Sources */,
